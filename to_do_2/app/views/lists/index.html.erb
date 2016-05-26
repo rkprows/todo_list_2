@@ -1,0 +1,6 @@
+<h1>To-Do Lists</h1>
+<p><%= link_to 'New List', new_list_path %></p>
+<% @lists.each do |list| %>
+	<h2><%= list.name %></h2>
+<%= link_to 'Show List', list_path(list) %>
+<% end %>

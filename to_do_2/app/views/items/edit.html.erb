@@ -1,0 +1,9 @@
+<h1>Edit <%= @item.name %></h1>
+<%= render(partial: 'item_form') %>
+
+<%= form_for @item do |f| %>
+<%= f.label :complete %>:
+<%= f.check_box :complete %>
+
+<%= f.submit %>
+<% end %>

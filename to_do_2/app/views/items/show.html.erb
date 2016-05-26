@@ -1,0 +1,9 @@
+<!-- specific to do within list -->
+<h1><%= @item.name %></h1>
+
+<h2><%= @item.description %></h2>
+<%= link_to 'Edit', edit_item_path(@item) %>
+<%= link_to 'Delete', item_path(@item), method: :delete %>
+<%= link_to 'Back to List', items_path %>
+
+<!-- link to parent to_do list -->
